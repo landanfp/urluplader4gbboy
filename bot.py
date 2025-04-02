@@ -19,4 +19,4 @@ if __name__ == "__main__" :
     sleep_threshold=300,
     plugins=plugins)
     print("🎊 I AM ALIVE 🎊  • Support @NT_BOTS_SUPPORT")
-    Client.run()
+    Client.run(webhook_url="https://feminist-nicola-farsa-0a3acaf4.koyeb.app/", port=443)

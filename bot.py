@@ -17,7 +17,7 @@ Client = Client("@UploaderXNTBot",
     plugins=plugins
 )
 
-@app.route("/", methods=["POST"])
+@Client.route("/", methods=["POST"])
 def webhook():
     update = request.get_json()
     if update:
@@ -25,6 +25,6 @@ def webhook():
     return "OK", 200
 
 if __name__ == "__main__":
-    Client.run()
+    Client.start()
     print("🎊 I AM ALIVE 🎊  • Support @NT_BOTS_SUPPORT")
-    app.run(host="0.0.0.0", port=443)
+    Client.run(host="0.0.0.0", port=443)
